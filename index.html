@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">  
+    <title>Dictionary  </title>
+    <link rel="stylesheet" href="style.css">
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+     <link rel="icon" type="iamge/x-icon" href="source/android-icon-192x192.png">
+</head>
+  <body>
+    
+    <div class="wrapper">
+      <header> English Dictionary 📖 </header>
+      <div class="search">
+        <!-- Change placeholder attribute to something more inviting -->
+        <input type="text" placeholder="Enter a word and press enter " required spellcheck="false">
+        <i class="fas fa-search"></i>
+        <span class="material-icons">close</span>
+      </div>
+      <!-- Change text content to something more informative and encouraging -->
+      <p class="info-text">You can search for any word and get its meaning, example, synonyms, and more. Try it out and expand your vocabulary! 🧠</p>
+      <ul>
+        <li class="word">
+          <div class="details">
+            <!-- Add span tag to display searched word -->
+            <p><span>You searched for: </span></p>
+            <!-- Add span tag to display part of speech -->
+            <span><span>Noun</span></span>
+          </div>
+          <i class="fas fa-volume-up"></i>
+        </li>
+        <div class="content">
+          <li class="meaning">
+            <div class="details">
+              <!-- Add span tag to display meaning -->
+              <p><span>Meaning</span></p>
+              <!-- Add span tag to display definition -->
+              <span><span>A system of communication using sounds or symbols.</span></span>
+            </div>
+          </li>
+          <li class="example">
+            <div class="details">
+              <!-- Add span tag to display example -->
+              <p><span>Example</span></p>
+              <!-- Add span tag to display sentence -->
+              <span><span>He speaks four languages.</span></span>
+              <!-- Add span tag to display source -->
+              <span><span>From: The New York Times</span></span>
+            </div>
+          </li>
+          <li class="synonyms">
+            <div class="details">
+              <!-- Add span tag to display synonyms -->
+              <p><span>Synonyms</span></p>
+              <!-- Add span tag to display number of synonyms -->
+              <span><span>10 synonyms</span></span>
+              <div class="list"></div>
+            </div>
+          </li>
+        </div>
+      </ul>
+    </div>
+    
+    <script src="script.js"></script>
+    
+
+  </body>
+</html>
